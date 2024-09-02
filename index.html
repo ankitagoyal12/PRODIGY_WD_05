@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather-web</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <header> Weather Detector</header>
+  
+  
+  <main>
+    <div class="app">
+    <div class="card-1">
+      <h2>Weather-Friend</h2>
+      
+      <input type="search" name="" placeholder="Enter Location" id="search-box">
+      <div id="loading-spinner" class="loading-spinner" style="display: none;"></div>
+      
+      <button id="btn">Click me</button>
+    </div>
+
+
+    <div class="card-2">
+      <div class="card-2-data">
+        <h4>Temperature</h4>
+        <div class="temperature">
+         
+          <span id="temperature">0c</span> <i class="fa-solid fa-temperature-half"></i>
+        </div>
+
+        <h4>Wind-speed</h4>
+        <div class="wind">
+          <span id="wind">0 km/h</span><i class="fa-solid fa-wind"></i>
+        </div>
+
+        <h4>Humidity</h4>
+        <div class="humidity">
+          <span id="humidity">0 %</span><i class="fa-solid fa-water"></i>
+        </div>
+      </div>
+      <div class="card-2-data-2">
+        <h4>RainIntensity</h4>
+        <div class="rain">
+          <span id="rain">0 mm</span> <i class="fa-solid fa-cloud-rain"></i>
+        </div>
+        <h4>SnowIntensity</h4>
+        <div class="snow">
+          <span id="snow">0 inch</span> <i class="fa-solid fa-snowflake"></i>
+        </div>
+        <h4>Clouds</h4>
+        <div class="clouds">
+          <span id="cloud">0 %</span> <i class="fa-solid fa-cloud"></i>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </main>
+
+<footer>
+  <div class="footer-section">
+    <div class="social-media">
+      <h2>Find Me At</h2>
+      <a href="https://www.linkedin.com/in/ankita-goyal-702881247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="main" id="linkedin"><i class="fa-brands fa-linkedin"></i>Linkedin</a> 
+      <a href="https://github.com/ankitagoyal12" target="main" id="github"><i class="fa-brands fa-github"></i> Github</a>
+    </div>
+    
+  </div>
+  <div class="author">
+    <span>Develop and design by ©<a href="https://www.linkedin.com/in/ankita-goyal-702881247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="main"> Ankita Goyal</a></span>
+  </div>
+</footer>  
+<script src="script.js"></script>
+</body>
+</html>

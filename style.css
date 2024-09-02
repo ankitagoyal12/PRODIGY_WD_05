@@ -1,0 +1,484 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: auto;
+    height: auto;
+    font-size: 1.50rem;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(2, 9, 31);
+}
+
+header:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+
+
+main{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    flex: 1;
+    
+}
+
+.app{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-1{
+    height: auto;
+    width: 250px;
+    border-radius: 5px;
+    background-image: url('images/cartoon-sun-vector.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 60px;
+    align-items: center;
+    
+    
+}
+
+ .card-1 h2{
+    color: #fff;
+} 
+
+#search-box{
+    width: 200px;
+    height: 30px;
+    border: 3px solid blue;
+    border-radius: 4px;
+    padding-left: 10px;
+    background-color: white;
+    color: #000;
+} 
+
+.card-1 button{
+    width: 80px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+    
+}
+
+
+
+
+.card-2{
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    background-image: url(images/new-york-night-cityscape-cartoon-vector-20917887.jpg);
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    gap: 30px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    
+}
+
+.card-2-data, .card-2-data-2{
+    height: 200px;
+    width: 150px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.temperature, .humidity, .wind, .rain, .snow, .clouds{
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loading-spinner {
+    border: 4px solid rgba(30, 19, 19, 0.916);
+    border-left-color: #683eff; 
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin-right: 5px;
+  }
+
+  body{
+    background: linear-gradient(to right,#e2e2e2,#c9dcff);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .footer-section{
+    height: 200px;
+    margin-top: 20px;
+    width: 100%;
+    background-image: linear-gradient(50deg , #401F71 , #000);
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+  }
+
+  .social-media, .about-project{
+    height: 150px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+
+  .author{
+    width: auto;
+    height: 50px;
+    background-image: linear-gradient(240deg , #401f71 , #000);
+    padding-left: 10px;
+  }
+
+  .author a{
+    text-decoration: none;
+    color: #FFAF45;
+  }
+
+  .author a:hover{
+    pad: 1px;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+  }
+
+  .social-media a, .about-project a, .author{
+    text-decoration: none;
+    color: white;
+  }
+
+  .social-media a:hover{
+    color: #5145ff;
+    margin: 2px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .about-project a:hover{
+    color: #ff3ef2;
+    padding: 2px;
+    transition: 0.5s ease-in-out;
+  }
+
+
+
+
+/*           Responsive Design        */
+
+
+
+
+@media screen and (max-width: 200px) {
+    header {
+        font-size: 0.90rem;
+    }
+
+    .app {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card-1{
+        width: auto;
+        height: auto;
+        padding: 10px;
+        gap: 20px;
+        text-align: center;
+        font-size: 0.90rem;
+    }
+
+    .card-2{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.90rem;
+        background-image: none;
+        background-color: transparent;
+    }
+
+
+    #search-box {
+        width: 80px;
+        height: 20px;
+        font-size: 0.60rem;
+    }
+
+    .card-1 button {
+        width: 50px;
+        height: 20px;
+        font-size: 0.40rem;
+    }
+
+    .card-2-data, .card-2-data-2 {
+        width: 130px;
+    }
+
+    .card-2-data h4, .card-2-data-2 h4{
+        font-size: 0.60rem;
+    }
+
+    .card-2 i{
+        margin-top: 2px;
+    }
+
+    .footer-section{
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 30px;
+        font-size: 0.60rem;
+    }
+
+}
+
+
+@media screen and (min-width: 201px) and (max-width: 400px) {
+    header {
+        font-size: 1.2rem;
+    }
+
+    .app {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-1, .card-2 {
+        width: auto;
+        height: auto;
+        padding: 15px;
+        gap: 30px;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    #search-box {
+        width: 100px;
+        height: 25px;
+        font-size: 0.80rem;
+    }
+
+    .card-1 button {
+        width: 60px;
+        height: 25px;
+        font-size: 0.60rem;
+    }
+
+    .card-2-data {
+        width: 150px;
+    }
+
+    .card-2-data h4{
+        font-size: 0.70rem;
+    }
+    
+    .card-1{
+        width: auto;
+        height: auto;
+        padding: 10px;
+        gap: 20px;
+        text-align: center;
+        font-size: 0.90rem;
+    }
+
+    .card-2{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.90rem;
+        background-image: url(images/bg-img2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+    }
+
+    .card-2 i{
+        margin-top: 2px;
+    }
+    
+
+    .footer-section{
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 30px;
+        font-size: 0.70rem;
+    }
+
+    .footer-section h2{
+        font-size: 1rem;
+    }
+    
+}
+
+
+@media screen and (min-width: 401px) and (max-width: 800px) {
+    header {
+        font-size: 1.2rem;
+    }
+
+    .app {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .card-1, .card-2 {
+        width: auto;
+        height: auto;
+        padding: 15px;
+        gap: 30px;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    #search-box {
+        width: 150px;
+        height: 25px;
+        font-size: 0.80rem;
+    }
+
+    .card-1 button {
+        width: 60px;
+        height: 25px;
+        font-size: 0.60rem;
+    }
+
+    .card-2-data {
+        width: 150px;
+    }
+
+    .card-2-data h4{
+        font-size: 0.70rem;
+    }
+    
+    .card-1{
+        width: auto;
+        height: auto;
+        padding: 10px;
+        gap: 20px;
+        text-align: center;
+        font-size: 0.90rem;
+    }
+
+    .card-2{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.90rem;
+        background-image: url(/bg-img2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+    }
+
+    .card-2 i{
+        margin-top: 2px;
+    }
+
+    
+    .footer-section{
+        width: 100%;
+        height: 200px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+        font-size: 0.90rem;
+    }
+
+    .social-media , .about-project{
+       width: auto;
+       height: 150px;
+    }
+
+    .author{
+        padding-top: 20px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-section h2{
+        font-size: 1.20rem;
+    }
+
+}
+
+@media  screen and (min-width:800px) {
+     
+    .footer-section{
+        width: 100%;
+        height: 200px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+        font-size: 0.90rem;
+        background-image: linear-gradient(240deg , #000 , #000);
+    }
+
+    .social-media , .about-project{
+       width: auto;
+       height: 150px;
+    }
+
+    .author{
+        padding-top: 20px;
+        height: 150px;
+        background-image: linear-gradient(240deg , #401f71 , #000);
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-section h2{
+        font-size: 1.20rem;
+    }
+}
